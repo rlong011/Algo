@@ -1,0 +1,9 @@
+eurusd1a <- getSymbols.csv(Symbols="EURUSD_2003-05-05_2015-10-24_est_1m",
+                  env = .GlobalEnv,
+                  dir="/data",
+                  return.class = 'xts',
+                  extension = "csv",
+                  col.names=c("Timestamp","Bid price","Ask price","Bid volume","Ask volume"),
+                  index.class  = 'Timestamp',
+                  from = "2007-01-01",
+                  to = "2007-02-01")
